@@ -1,8 +1,8 @@
 const FilterSection = () => {
   return (
-    <div className="container mx-auto mt-0 pt-0">
+    <div className="container mx-auto  py-10">
       <h1 className="text-2xl">Find Your Next Developer Role</h1>
-      <p>Search, filter and save the jobs you like...</p>
+      <p className="py-3">Search, filter and save the jobs you like...</p>
 
       <div className="flex justify-between items-center">
         {/* search */}
@@ -23,11 +23,11 @@ const FilterSection = () => {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" required placeholder="Search" />
+          <input  type="search" required placeholder ="Search" />
         </label>
 
         {/* tab-section */}
-        <div>
+        <div className="">
             <button className="btn btn-neutral rounded-full mr-2">All</button>
             <button className="btn  rounded-full mr-2">Fontend</button>
             <button className="btn  rounded-full mr-2">Backend</button>
