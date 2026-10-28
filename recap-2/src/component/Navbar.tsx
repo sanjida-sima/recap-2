@@ -1,8 +1,13 @@
 
 import { FaRegBookmark } from "react-icons/fa";
+import type { JobsType } from "../types/JobsType";
 
 
-const Navbar = () => {
+type TNavBarProps = {
+  savedJobs : JobsType[];
+
+}
+const Navbar = ({savedJobs}:TNavBarProps) => {
   return (
     <div className="max-lg:collapse bg-base-200 lg:mb-4 shadow-sm w-full rounded-md">
   <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
@@ -33,7 +38,7 @@ const Navbar = () => {
       </ul>
     </div>
     <div className="navbar-end">
-     <button className="btn btn-neutral"><FaRegBookmark /> Saved Jobs.2</button>
+     <button className="btn btn-neutral"><FaRegBookmark /> Saved Jobs.{savedJobs.length}</button>
     </div>
   </div>
 
